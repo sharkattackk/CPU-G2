@@ -35,7 +35,7 @@ begin
 							RHi <=            //Division
 						end
 				4'b0110:
-                            //And
+                    	RLo = A & B    //And
 				4'b0111:
                             //Or
 				4'b1000:
