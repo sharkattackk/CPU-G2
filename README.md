@@ -51,9 +51,3 @@ Regularly update this checklist and the associated project repository to reflect
 - Follow coding standards and conventions for consistency.
 - Test your modules thoroughly before pushing to the main branch.
 
-## Contacts
-- [Add contact information for project members and contributors]
-
-## Change Log
-- [Keep a log of significant changes and updates to the project]
-
