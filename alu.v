@@ -7,12 +7,13 @@ module alu(
 			output carry
 );
 
-
+wire[63:0] multi_res;
 wire[31:0] ror_res, rol_res;
 reg [31:0] RLo, RHi;
 assign Z = {RHi, RLo};
 initial RHi = 0;
 
+Multiplicaion multi(multi_res,A,B);
 rotate_right ror(ror_res,A,B);
 rotate_left rol(rol_res,A,B);
 
@@ -21,31 +22,31 @@ always @ (posedge clk)
 begin
 		case(select)
 				4'b0001:
-                            //Addition
+                        RLo <= A + B;    //Addition
 				4'b0010:
-						    //Subtraction
+						RLo <= A - B;    //Subtraction
 				4'b0011:
 						begin
-							RLo <=                  //Multiplicaion
-							RHi <= 
+							RLo <= multi[31:0];                 //Multiplicaion
+							RHi <= multi[63:32]
 						end
 				4'b0101:
 						begin
-					        RLo <=             //Mod
-							RHi <=            //Division
+					        RHi <= A % B;            //Mod
+							RLo <= (A-RHi) / B;           //Division
 						end
 				4'b0110:
-                    	RLo = A & B    //And
+                    	RLo <= A & B;    //And
 				4'b0111:
-                            //Or
+                        RLo <=  A | B;   //Or
 				4'b1000:
-                            //2s complement
+                        RLo <= ~B+1    //2s complement
 				4'b1010:
-                            //Not
+                        RLo <= ~B    //Not
 				4'b1100:
-                            //Shift Left
+                        RLo <= A<<B;    //Shift Left
 				4'b1101:
-                            //Shift Right
+                        RLo <= A>>B;    //Shift Right
 				4'b1110:
 						RLo <= rol_res;         //Rotate left
 				4'b1111:
