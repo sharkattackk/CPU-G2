@@ -28,7 +28,7 @@ begin
 				4'b0011:
 						begin
 							RLo <= multi[31:0];                 //Multiplicaion
-							RHi <= multi[63:32];
+							RHi <= multi[63:32]
 						end
 				4'b0101:
 						begin
@@ -40,9 +40,9 @@ begin
 				4'b0111:
                         RLo <=  A | B;   //Or
 				4'b1000:
-                        RLo <= ~B+1;    //2s complement
+                        RLo <= ~B+1    //2s complement
 				4'b1010:
-                        RLo <= ~B;    //Not
+                        RLo <= ~B    //Not
 				4'b1100:
                         RLo <= A<<B;    //Shift Left
 				4'b1101:

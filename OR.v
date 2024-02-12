@@ -1,9 +1,9 @@
 `timescale 1ns / 1ns
 // OR module
 
-module OR(cOut, x, y);
+module OR(m, x, y);
     input [31:0] x, y;
     output [31:0] m;
 
-    m = x | y;  
+    assign m = (x | y);  
 endmodule

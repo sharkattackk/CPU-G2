@@ -1,9 +1,9 @@
 `timescale 1ns / 1ns
-// XOR module
+// OR module
 
-module XOR(m, x, y);
+module OR(cOut, x, y);
     input [31:0] x, y;
     output [31:0] m;
 
-    assign m = (x ^ y);  
+    m = x | y;  
 endmodule

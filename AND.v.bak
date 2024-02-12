@@ -4,5 +4,5 @@ module AND(p, x, y);
     input [31:0] x, y;
     output [31:0] p;
 
-    assign p = (x & y);  
+    p = x & y;  
 endmodule
