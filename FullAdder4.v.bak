@@ -4,7 +4,7 @@
 module FullAdder4(s, cOut, x, y, cIn);
     input [3:0] x, y;
     input cIn;
-    output [3:0] s, cOut;
+    output [3:0] s;
 
     wire [2:0] carry;
 

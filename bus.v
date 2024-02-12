@@ -7,7 +7,7 @@ module bus(input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, 
 				
 	wire [4:0] select;
 	wire muxin = {{8{1'b0}}, R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
-						HIout, LOout, Zhighout, zlowout, Pout, MDRout, In_portOut, Cout};
+						HIout, LOout, Zhighout, zlowout, Pout, MDRout, In_Portout, Cout};
 						
 	ThirtyTwoToFiveEncoder encoder(select, muxin);
 	
