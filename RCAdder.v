@@ -2,10 +2,10 @@
 // Ripple Carry Adder
 module RCAdder(A, B, Result);
 
-input [7:0] A, B;
-output [7:0] Result;
+input [31:0] A, B;
+output [31:0] Result;
 
-reg [7:0] Result;
+reg [31:0] Result;
 reg [8:0] LocalCarry;
 
 integer i;
