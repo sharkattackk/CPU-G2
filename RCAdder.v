@@ -1,22 +1,15 @@
 `timescale 1ns / 1ns
-// Ripple Carry Adder
-module RCAdder(A, B, Result);
+// Full Adders combined first stage Ripple Carry module
 
-input [31:0] A, B;
-output [31:0] Result;
+module RCAdder(s, cOut, x, y, cIn);
+    input [31:0] x, y;
+    input cIn;
+    output [31:0] s;
 
-reg [31:0] Result;
-reg [8:0] LocalCarry;
+    wire [2:0] carry;
 
-integer i;
-
-always@(A or B)
-	begin
-		LocalCarry = 9'd0;
-		for(i = 0; i < 8; i = i + 1)
-		begin
-				Result[i] = A[i]^B[i]^LocalCarry[i];
-				LocalCarry[i+1] = (A[i]&B[i])|(LocalCarry[i]&(A[i]|B[i]));
-		end
-end
+    FullAdder FA0(.x(x[0]), .y(y[0]), .cIn(cIn), .s(s[0]), .cOut(carry[0]));
+    FullAdder FA1(.x(x[1]), .y(y[1]), .cIn(carry[0]), .s(s[1]), .cOut(carry[1]));
+    FullAdder FA2(.x(x[2]), .y(y[2]), .cIn(carry[1]), .s(s[2]), .cOut(carry[2]));
+    FullAdder FA3(.x(x[3]), .y(y[3]), .cIn(carry[2]), .s(s[3]), .cOut(cOut));
 endmodule

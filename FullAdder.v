@@ -1,8 +1,16 @@
 `timescale 1ns / 1ns
 // Full Adder
+<<<<<<< HEAD
 module FullAdder(s, cOut, a, b, cIn);
     input a, b, cIn;
     output s, cOut;
+=======
+module FullAdder(s, cOut, x, y, cIn);
+    input [7:0] x, y; 
+    input cIn;
+    output [7:0] s;
+    output cOut;
+>>>>>>> bab46e30b0a0f5b2e51d54604e8c79c2c5ef52bc
     
     wire w1, w2, w3;
 
