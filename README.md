@@ -13,14 +13,14 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 - [ ] Implement MUL module
 - [x] Add module
 - [x] Sub module
-- [ ] Negate module
+- [x] Negate module
 - [ ] Div module
 
 ### Logic Modules
 - [x] OR module
 - [x] XOR module
 - [x] AND module
-- [ ] Not
+
 ### Shift Modules
 - [ ] SHR module (Shift Right)
 - [ ] SHRA module (Shift Right Arithmetic)
@@ -45,7 +45,9 @@ Regularly update this checklist and the associated project repository to reflect
 
 ## Notes
 - The cOut signal in the subtraction and addition operation using two's complement arithmetic reflects the carry-out of the addition of A and the two's complement of B, serving as an overflow indicator rather than a traditional borrow from binary subtraction.
-- The overflow indicator serves as a critical checkpoint in ensuring that systems operate correctly, safely, and securely by detecting and managing situations where calculations exceed the bounds of the chosen representation.
+- The overflow indicator ensures that systems operate correctly, safely, and securely by detecting and managing situations where calculations exceed the bounds of the chosen representation.
+- wire is used to represent connections between parts
+- 
 
 ## Contribution Guidelines
 - Ensure code is well-documented.

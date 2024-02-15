@@ -1,3 +1,5 @@
+`timescale 1ns / 1ns
+// Add Module
 module ADD(Sum, cOut, A, B);
     input [31:0] A, B;
     output [31:0] Sum;
