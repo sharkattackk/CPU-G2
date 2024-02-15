@@ -43,8 +43,8 @@ Document the design, implementation details, and testing procedures for each mod
 Regularly update this checklist and the associated project repository to reflect progress and any changes in project scope or objectives.
 
 ## Notes
-- Prioritize fixing bus errors to ensure system stability.
-- Consider modular testing before integration testing to isolate and resolve issues more efficiently.
+- The cOut signal in the subtraction and addition operation using two's complement arithmetic reflects the carry-out of the addition of A and the two's complement of B, serving as an overflow indicator rather than a traditional borrow from binary subtraction.
+- The overflow indicator serves as a critical checkpoint in ensuring that systems operate correctly, safely, and securely by detecting and managing situations where calculations exceed the bounds of the chosen representation.
 
 ## Contribution Guidelines
 - Ensure code is well-documented.
