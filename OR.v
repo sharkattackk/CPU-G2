@@ -2,8 +2,8 @@
 // OR module
 
 module OR(m, x, y);
-    input [31:0] x, y;
-    output [31:0] m;
+    input x, y;
+    output m;
 
-    assign m = (x | y);  
+    assign m = x | y;  
 endmodule
