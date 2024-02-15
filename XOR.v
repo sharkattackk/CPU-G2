@@ -2,8 +2,8 @@
 // XOR module
 
 module XOR(m, x, y);
-    input [31:0] x, y;
-    output [31:0] m;
+    input x, y;
+    outputm;
 
-    assign m = (x ^ y);  
+    assign m = x ^ y;  
 endmodule
