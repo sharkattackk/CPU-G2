@@ -11,15 +11,16 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 
 ### Arithmetic Modules
 - [ ] Implement MUL module
-- [ ] Add module
-- [ ] Sub module
+- [x] Add module
+- [x] Sub module
 - [ ] Negate module
 - [ ] Div module
 
 ### Logic Modules
-- [ ] Or module
-- [ ] Not module
-
+- [x] OR module
+- [x] XOR module
+- [x] AND module
+- [ ] Not
 ### Shift Modules
 - [ ] SHR module (Shift Right)
 - [ ] SHRA module (Shift Right Arithmetic)
