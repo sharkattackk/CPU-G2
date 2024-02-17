@@ -61,6 +61,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE RCAdder_tb.v -section_id RCAdder
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE FullAdder.v
 set_global_assignment -name VERILOG_FILE Z_Reg.v
 set_global_assignment -name VERILOG_FILE thirtyTwoToOneMultiplexer.v
 set_global_assignment -name VERILOG_FILE ThirtyTwoToFiveEncoder.v
@@ -82,7 +83,6 @@ set_global_assignment -name VERILOG_FILE My_ADD.v
 set_global_assignment -name VERILOG_FILE Multiplication.v
 set_global_assignment -name VERILOG_FILE MDR_Reg.v
 set_global_assignment -name VERILOG_FILE Gen_Reg.v
-set_global_assignment -name VERILOG_FILE FullAdder.v
 set_global_assignment -name VERILOG_FILE Datapath.v
 set_global_assignment -name VERILOG_FILE bus.v
 set_global_assignment -name VERILOG_FILE alu.v

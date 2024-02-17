@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU-G2
-Sat Feb 17 16:28:59 2024
+Sat Feb 17 16:43:11 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -10,8 +10,9 @@ Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  5. Port Connectivity Checks: "RCAdder32:DUT"
+  6. Analysis & Elaboration Messages
+  7. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -38,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Sat Feb 17 16:28:59 2024           ;
+; Analysis & Elaboration Status ; Failed - Sat Feb 17 16:43:11 2024           ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU-G2                                      ;
 ; Top-level Entity Name         ; RCAdder_tb                                  ;
@@ -156,66 +157,82 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RCAdder32:DUT"                                                                                                                                         ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type    ; Severity         ; Details                                                                                                                                      ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; x     ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; y     ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; carry ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; Sum   ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; cOut  ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; A     ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; B     ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; cIn   ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Sat Feb 17 16:28:34 2024
+    Info: Processing started: Sat Feb 17 16:42:55 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
+    Info (12023): Found entity 1: FullAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file z_reg.v
     Info (12023): Found entity 1: Z_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file subtract.v
-    Info (12023): Found entity 1: SUBTRACT File: C:/intelFPGA_lite/18.1/elec374DesignProject/SUBTRACT.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file shr.v
-    Info (12023): Found entity 1: SHR File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHR.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file shl.v
-    Info (12023): Found entity 1: SHL File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHL.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file pc_reg.v
-    Info (12023): Found entity 1: PC_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/PC_Reg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file oldrcadder.v
-    Info (12023): Found entity 1: RCAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/OldRCAdder.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file neg.v
-    Info (12023): Found entity 1: NEG File: C:/intelFPGA_lite/18.1/elec374DesignProject/NEG.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file mul.v
-    Info (12023): Found entity 1: MUL File: C:/intelFPGA_lite/18.1/elec374DesignProject/MUL.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file mdr_reg.v
-    Info (12023): Found entity 1: MDR_reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/MDR_Reg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file gen_reg.v
-    Info (12023): Found entity 1: Gen_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file add.v
-    Info (12023): Found entity 1: ADD File: C:/intelFPGA_lite/18.1/elec374DesignProject/ADD.v Line: 3
-Warning (12018): Entity "XOR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/XOR.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file xor.v
 Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotoonemultiplexer.v
     Info (12023): Found entity 1: thirtyTwoToOneMultiplexer File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotofiveencoder.v
     Info (12023): Found entity 1: ThirtyTwoToFiveEncoder File: C:/intelFPGA_lite/18.1/elec374DesignProject/ThirtyTwoToFiveEncoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shr.v
+    Info (12023): Found entity 1: SHR File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHR.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file shl.v
+    Info (12023): Found entity 1: SHL File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHL.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file rotate_right.v
     Info (12023): Found entity 1: rotate_right File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_right.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotate_left.v
     Info (12023): Found entity 1: rotate_left File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_left.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rcadder32.v
+    Info (12023): Found entity 1: RCAdder32 File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder32.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file rcadder_tb.v
     Info (12023): Found entity 1: RCAdder_tb File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 3
-Warning (12018): Entity "OR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/OR.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file or.v
+Info (12021): Found 1 design units, including 1 entities, in source file pc_reg.v
+    Info (12023): Found entity 1: PC_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/PC_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file oldrcadder.v
+    Info (12023): Found entity 1: RCAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/OldRCAdder.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file my_xor.v
+    Info (12023): Found entity 1: My_XOR File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_XOR.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file my_subtract.v
+    Info (12023): Found entity 1: My_SUBTRACT File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_SUBTRACT.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file my_or.v
+    Info (12023): Found entity 1: My_OR File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_OR.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file my_neg.v
+    Info (12023): Found entity 1: My_NEG File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_NEG.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file my_mul.v
+    Info (12023): Found entity 1: My_MUL File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_MUL.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file my_and.v
+    Info (12023): Found entity 1: My_AND File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_AND.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file my_add.v
+    Info (12023): Found entity 1: My_ADD File: C:/intelFPGA_lite/18.1/elec374DesignProject/My_ADD.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file multiplication.v
     Info (12023): Found entity 1: Multiplicaion File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 1
-Warning (12019): Can't analyze file -- file FullAdder4.v is missing
-Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
-    Info (12023): Found entity 1: FullAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mdr_reg.v
+    Info (12023): Found entity 1: MDR_reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/MDR_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file gen_reg.v
+    Info (12023): Found entity 1: Gen_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
     Info (12023): Found entity 1: Datapath File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bus.v
     Info (12023): Found entity 1: bus File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 2
-Warning (12018): Entity "AND" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/AND.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file and.v
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 1
-Warning (12019): Can't analyze file -- file RCAdder.v is missing
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(40): created implicit net for "busInPC" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 40
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(42): created implicit net for "busInMAR" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 42
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(43): created implicit net for "busInMDR" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 43
@@ -254,13 +271,23 @@ Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R15in" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "HIin" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 15
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "LOin" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 15
-Error (10206): Verilog HDL Module Declaration error at Gen_Reg.v(4): top module port "rd" is not found in the port list File: C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v Line: 4
+Info (12127): Elaborating entity "RCAdder_tb" for the top level hierarchy
+Warning (10175): Verilog HDL warning at RCAdder_tb.v(27): ignoring unsupported system task File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 27
+Info (12128): Elaborating entity "RCAdder32" for hierarchy "RCAdder32:DUT" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 15
+Info (12128): Elaborating entity "FullAdder" for hierarchy "RCAdder32:DUT|FullAdder:FA0" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder32.v Line: 14
+Info (12128): Elaborating entity "My_XOR" for hierarchy "RCAdder32:DUT|FullAdder:FA0|My_XOR:xor1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 10
+Info (12128): Elaborating entity "My_AND" for hierarchy "RCAdder32:DUT|FullAdder:FA0|My_AND:and1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 14
+Info (12128): Elaborating entity "My_OR" for hierarchy "RCAdder32:DUT|FullAdder:FA0|My_OR:or1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 18
+Error (12002): Port "carry" does not exist in macrofunction "DUT" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 15
+Error (12002): Port "x" does not exist in macrofunction "DUT" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 15
+Error (12002): Port "y" does not exist in macrofunction "DUT" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 15
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374DesignProject/output_files/CPU-G2.map.smsg
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 45 warnings
-    Error: Peak virtual memory: 4762 megabytes
-    Error: Processing ended: Sat Feb 17 16:28:59 2024
-    Error: Elapsed time: 00:00:25
-    Error: Total CPU time (on all processors): 00:00:26
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 3 errors, 42 warnings
+    Error: Peak virtual memory: 4768 megabytes
+    Error: Processing ended: Sat Feb 17 16:43:11 2024
+    Error: Elapsed time: 00:00:16
+    Error: Total CPU time (on all processors): 00:00:09
 
 
 +--------------------------------------------+
