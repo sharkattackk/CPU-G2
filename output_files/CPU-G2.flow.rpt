@@ -1,5 +1,5 @@
 Flow report for CPU-G2
-Sat Feb 17 15:55:09 2024
+Sat Feb 17 16:09:47 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Sat Feb 17 15:55:09 2024      ;
+; Flow Status                 ; Flow Failed - Sat Feb 17 16:09:47 2024      ;
 ; Quartus Prime Version       ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name               ; CPU-G2                                      ;
 ; Top-level Entity Name       ; RCAdder                                     ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/17/2024 15:54:56 ;
+; Start date & time ; 02/17/2024 16:09:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU-G2              ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 92559207437070.170820329624792         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 92559207437070.170820417321948         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; RCAdder_tb     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; RCAdder_tb                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;

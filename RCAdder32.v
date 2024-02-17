@@ -1,7 +1,7 @@
 `timescale 1ns / 1ns
 // 32 bit RCA
 
-module RCAdder_32(Sum, cOut, A, B, cIn);
+module RCAdder32(Sum, cOut, A, B, cIn);
     input [31:0] A, B;
     input cIn;
     output [31:0] Sum;
