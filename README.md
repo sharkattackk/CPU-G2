@@ -10,7 +10,7 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 - [ ] Test bus system for stability and performance
 
 ### Arithmetic Modules
-- [ ] Implement MUL module
+- [x] Implement MUL module
 - [x] Add module
 - [x] Sub module
 - [x] Negate module
@@ -22,17 +22,18 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 - [x] AND module
 
 ### Shift Modules
-- [ ] SHR module (Shift Right)
+- [x] SHR module (Shift Right)
 - [ ] SHRA module (Shift Right Arithmetic)
-- [ ] SHL module (Shift Left)
+- [x] SHL module (Shift Left)
 
 ### Memory Access Modules
-- [ ] Implement MDR (Memory Data Register)
-- [ ] Implement MAR (Memory Address Register)
+- [x] Implement MDR (Memory Data Register)
+- [ ] Implement MAR (Memory Address Register)  "Dont think we need this?"
+- [x] Implement General Register (Register)
 
 ### Control Units
-- [ ] IR module (Instruction Register)
-- [ ] PC Module (Program Counter)
+- [x] PC Module (Program Counter Register)
+- [x] Z Register
 
 ## Testing and Validation
 - [ ] Set up Testbench for each module
