@@ -4,4 +4,4 @@ module MUL(M, Q, P);
     input [31:0] M, Q;
     output reg [63:0] P;
 
-endmodule    
+    
