@@ -1,6 +1,5 @@
 module Multiplicaion(
-    input signed [31:0] multiplicand,
-    input signed [31:0] multiplier,
+    input signed [31:0] multiplicand, multiplier
     output reg signed [63:0] product
 );
 
