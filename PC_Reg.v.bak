@@ -1,8 +1,7 @@
-module PC_Reg(
-			output reg [31:0] out,
-			input [31:0] bus,
-			input load, inc, clr, clk
-);
+module PC_Reg(out, bus, clr, clk, load, inc);
+    output reg [31:0] out,
+    input [31:0] bus,
+    input clr, clk, load, inc
 
     initial out = 0;
     always @(posedge clk)

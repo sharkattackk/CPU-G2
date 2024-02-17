@@ -1,4 +1,3 @@
-//`include "RCAdder.v"
 `timescale 1ns / 1ns
 
 module RCAdder_tb;

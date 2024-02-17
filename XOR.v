@@ -3,7 +3,7 @@
 
 module XOR(m, x, y);
     input x, y;
-    outputm;
+    output m;
 
     assign m = x ^ y;  
 endmodule

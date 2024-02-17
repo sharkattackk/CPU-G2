@@ -1,6 +1,6 @@
 Analysis & Elaboration report for CPU-G2
-Mon Feb 12 13:30:47 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Sat Feb 17 15:55:09 2024
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
 ---------------------
@@ -18,9 +18,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -30,26 +30,27 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                  ;
-+-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Mon Feb 12 13:30:47 2024               ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name                 ; CPU-G2                                          ;
-; Top-level Entity Name         ; Datapath                                        ;
-; Family                        ; Cyclone V                                       ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                       ;
-; Total registers               ; N/A until Partition Merge                       ;
-; Total pins                    ; N/A until Partition Merge                       ;
-; Total virtual pins            ; N/A until Partition Merge                       ;
-; Total block memory bits       ; N/A until Partition Merge                       ;
-; Total PLLs                    ; N/A until Partition Merge                       ;
-; Total DLLs                    ; N/A until Partition Merge                       ;
-+-------------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Sat Feb 17 15:55:09 2024           ;
+; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
+; Revision Name                 ; CPU-G2                                      ;
+; Top-level Entity Name         ; RCAdder                                     ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
 
 
 +------------------------------------------+
@@ -74,7 +75,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Datapath           ; CPU-G2             ;
+; Top-level entity name                                                           ; RCAdder            ; CPU-G2             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -160,137 +161,75 @@ refer to the applicable agreement for further details.
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Feb 12 13:30:37 2024
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+    Info: Processing started: Sat Feb 17 15:54:52 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12018): Entity "XOR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/19cmb13/CPU-G2/XOR.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file z_reg.v
+    Info (12023): Found entity 1: Z_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subtract.v
+    Info (12023): Found entity 1: SUBTRACT File: C:/intelFPGA_lite/18.1/elec374DesignProject/SUBTRACT.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file shr.v
+    Info (12023): Found entity 1: SHR File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHR.v Line: 3
+Error (10228): Verilog HDL error at SHL.v(3): module "SHR" cannot be declared more than once File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHL.v Line: 3
+Info (10499): HDL info at SHR.v(3): see declaration for object "SHR" File: C:/intelFPGA_lite/18.1/elec374DesignProject/SHR.v Line: 3
+Info (12021): Found 0 design units, including 0 entities, in source file shl.v
+Info (12021): Found 1 design units, including 1 entities, in source file pc_reg.v
+    Info (12023): Found entity 1: PC_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/PC_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file oldrcadder.v
+    Info (12023): Found entity 1: RCAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/OldRCAdder.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file neg.v
+    Info (12023): Found entity 1: NEG File: C:/intelFPGA_lite/18.1/elec374DesignProject/NEG.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mul.v
+    Info (12023): Found entity 1: MUL File: C:/intelFPGA_lite/18.1/elec374DesignProject/MUL.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mdr_reg.v
+    Info (12023): Found entity 1: MDR_reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/MDR_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file gen_reg.v
+    Info (12023): Found entity 1: Gen_Reg File: C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add.v
+    Info (12023): Found entity 1: ADD File: C:/intelFPGA_lite/18.1/elec374DesignProject/ADD.v Line: 3
+Warning (12018): Entity "XOR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/XOR.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file xor.v
 Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotoonemultiplexer.v
-    Info (12023): Found entity 1: thirtyTwoToOneMultiplexer File: C:/Users/19cmb13/CPU-G2/thirtyTwoToOneMultiplexer.v Line: 1
+    Info (12023): Found entity 1: thirtyTwoToOneMultiplexer File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotofiveencoder.v
-    Info (12023): Found entity 1: ThirtyTwoToFiveEncoder File: C:/Users/19cmb13/CPU-G2/ThirtyTwoToFiveEncoder.v Line: 1
+    Info (12023): Found entity 1: ThirtyTwoToFiveEncoder File: C:/intelFPGA_lite/18.1/elec374DesignProject/ThirtyTwoToFiveEncoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotate_right.v
-    Info (12023): Found entity 1: rotate_right File: C:/Users/19cmb13/CPU-G2/rotate_right.v Line: 1
+    Info (12023): Found entity 1: rotate_right File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_right.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotate_left.v
-    Info (12023): Found entity 1: rotate_left File: C:/Users/19cmb13/CPU-G2/rotate_left.v Line: 1
+    Info (12023): Found entity 1: rotate_left File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_left.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rcadder_tb.v
-    Info (12023): Found entity 1: RCAdder_tb File: C:/Users/19cmb13/CPU-G2/RCAdder_tb.v Line: 4
-Warning (12018): Entity "OR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/19cmb13/CPU-G2/OR.v Line: 4
+    Info (12023): Found entity 1: RCAdder_tb File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder_tb.v Line: 3
+Warning (12018): Entity "OR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/OR.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file or.v
 Info (12021): Found 1 design units, including 1 entities, in source file multiplication.v
-    Info (12023): Found entity 1: Multiplicaion File: C:/Users/19cmb13/CPU-G2/Multiplication.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fulladder4.v
-    Info (12023): Found entity 1: FullAdder4 File: C:/Users/19cmb13/CPU-G2/FullAdder4.v Line: 4
+    Info (12023): Found entity 1: Multiplicaion File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 1
+Warning (12019): Can't analyze file -- file FullAdder4.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
-    Info (12023): Found entity 1: FullAdder File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 3
+    Info (12023): Found entity 1: FullAdder File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: Datapath File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 1
+    Info (12023): Found entity 1: Datapath File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bus.v
-    Info (12023): Found entity 1: bus File: C:/Users/19cmb13/CPU-G2/bus.v Line: 2
-Warning (12018): Entity "AND" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/19cmb13/CPU-G2/AND.v Line: 3
+    Info (12023): Found entity 1: bus File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 2
+Warning (12018): Entity "AND" will be ignored because it conflicts with Quartus Prime primitive name File: C:/intelFPGA_lite/18.1/elec374DesignProject/AND.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file and.v
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/19cmb13/CPU-G2/alu.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rcadder.v
-    Info (12023): Found entity 1: RCAdder File: C:/Users/19cmb13/CPU-G2/RCAdder.v Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(40): created implicit net for "busInPC" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(42): created implicit net for "busInMAR" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(43): created implicit net for "busInMDR" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(43): created implicit net for "MDRread" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(47): created implicit net for "YData" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "busInZ" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZReg" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZLowout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZHighout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "A" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "BusMuxOut" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "zregin" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(52): created implicit net for "Rzin" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(52): created implicit net for "BusMuxInRz" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "Pout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "MDRout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "In_Portout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "Cout" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "zlowin" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(60): created implicit net for "Pin" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 60
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R0in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R1in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R2in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R3in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R4in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R5in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R6in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R7in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R8in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R9in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R10in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R11in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R12in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R13in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R14in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R15in" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "HIin" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "LOin" File: C:/Users/19cmb13/CPU-G2/bus.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at FullAdder.v(8): instance has no name File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at FullAdder.v(9): instance has no name File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at FullAdder.v(10): instance has no name File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 10
-Critical Warning (10846): Verilog HDL Instantiation warning at FullAdder.v(11): instance has no name File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 11
-Critical Warning (10846): Verilog HDL Instantiation warning at FullAdder.v(12): instance has no name File: C:/Users/19cmb13/CPU-G2/FullAdder.v Line: 12
-Info (12127): Elaborating entity "Datapath" for the top level hierarchy
-Warning (10034): Output port "ZRegout" at Datapath.v(11) has no driver File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 11
-Info (12128): Elaborating entity "alu" for hierarchy "alu:alu" File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 54
-Warning (10764): Verilog HDL warning at alu.v(47): converting signed shift amount to unsigned File: C:/Users/19cmb13/CPU-G2/alu.v Line: 47
-Warning (10764): Verilog HDL warning at alu.v(49): converting signed shift amount to unsigned File: C:/Users/19cmb13/CPU-G2/alu.v Line: 49
-Warning (10034): Output port "carry" at alu.v(8) has no driver File: C:/Users/19cmb13/CPU-G2/alu.v Line: 8
-Info (12128): Elaborating entity "Multiplicaion" for hierarchy "alu:alu|Multiplicaion:multi" File: C:/Users/19cmb13/CPU-G2/alu.v Line: 16
-Warning (10858): Verilog HDL warning at Multiplication.v(11): object i used but never assigned File: C:/Users/19cmb13/CPU-G2/Multiplication.v Line: 11
-Warning (10858): Verilog HDL warning at Multiplication.v(12): object clk used but never assigned File: C:/Users/19cmb13/CPU-G2/Multiplication.v Line: 12
-Warning (10030): Net "i" at Multiplication.v(11) has no driver or initial value, using a default initial value '0' File: C:/Users/19cmb13/CPU-G2/Multiplication.v Line: 11
-Warning (10030): Net "clk" at Multiplication.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/19cmb13/CPU-G2/Multiplication.v Line: 12
-Info (12128): Elaborating entity "rotate_right" for hierarchy "alu:alu|rotate_right:ror" File: C:/Users/19cmb13/CPU-G2/alu.v Line: 17
-Warning (10230): Verilog HDL assignment warning at rotate_right.v(7): truncated value with size 32 to match size of target (5) File: C:/Users/19cmb13/CPU-G2/rotate_right.v Line: 7
-Info (12128): Elaborating entity "rotate_left" for hierarchy "alu:alu|rotate_left:rol" File: C:/Users/19cmb13/CPU-G2/alu.v Line: 18
-Warning (10230): Verilog HDL assignment warning at rotate_left.v(7): truncated value with size 32 to match size of target (5) File: C:/Users/19cmb13/CPU-G2/rotate_left.v Line: 7
-Error (12006): Node instance "R0" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 22
-Error (12006): Node instance "R1" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 23
-Error (12006): Node instance "R2" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 24
-Error (12006): Node instance "R3" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 25
-Error (12006): Node instance "R4" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 26
-Error (12006): Node instance "R5" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 27
-Error (12006): Node instance "R6" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 28
-Error (12006): Node instance "R7" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 29
-Error (12006): Node instance "R8" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 30
-Error (12006): Node instance "R9" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 31
-Error (12006): Node instance "R10" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 32
-Error (12006): Node instance "R11" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 33
-Error (12006): Node instance "R12" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 34
-Error (12006): Node instance "R13" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 35
-Error (12006): Node instance "R14" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 36
-Error (12006): Node instance "R15" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 37
-Error (12006): Node instance "IR" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 39
-Error (12006): Node instance "PC" instantiates undefined entity "pc_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 40
-Error (12006): Node instance "MAR" instantiates undefined entity "gen_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 42
-Error (12006): Node instance "MDR" instantiates undefined entity "mdr_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 43
-Error (12006): Node instance "HI" instantiates undefined entity "gen_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 45
-Error (12006): Node instance "LO" instantiates undefined entity "gen_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 46
-Error (12006): Node instance "Y" instantiates undefined entity "gen_reg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 47
-Error (12006): Node instance "Z" instantiates undefined entity "z_reg_32". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 48
-Error (12006): Node instance "add" instantiates undefined entity "adder". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 51
-Error (12006): Node instance "RZ" instantiates undefined entity "register". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 52
-Error (12006): Node instance "bus" instantiates undefined entity "Bus". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/19cmb13/CPU-G2/Datapath.v Line: 60
-Info (144001): Generated suppressed messages file C:/Users/19cmb13/CPU-G2/output_files/CPU-G2.map.smsg
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 27 errors, 57 warnings
-    Error: Peak virtual memory: 4779 megabytes
-    Error: Processing ended: Mon Feb 12 13:30:47 2024
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:09
+    Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 1
+Error (10228): Verilog HDL error at RCAdder.v(4): module "RCAdder" cannot be declared more than once File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder.v Line: 4
+Info (10499): HDL info at OldRCAdder.v(3): see declaration for object "RCAdder" File: C:/intelFPGA_lite/18.1/elec374DesignProject/OldRCAdder.v Line: 3
+Info (12021): Found 0 design units, including 0 entities, in source file rcadder.v
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374DesignProject/output_files/CPU-G2.map.smsg
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 6 warnings
+    Error: Peak virtual memory: 4762 megabytes
+    Error: Processing ended: Sat Feb 17 15:55:09 2024
+    Error: Elapsed time: 00:00:17
+    Error: Total CPU time (on all processors): 00:00:13
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/19cmb13/CPU-G2/output_files/CPU-G2.map.smsg.
+The suppressed messages can be found in C:/intelFPGA_lite/18.1/elec374DesignProject/output_files/CPU-G2.map.smsg.
 
 

@@ -1,10 +1,9 @@
-module Z_Reg (
-			output reg [31:0] ZOut, 
-			input [63:0] ZDataIn,
-			input ZInput, ZLowOut, ZHighOut, clr, clk
-);
+module Z_Reg(ZOut, ZDataIn, ZLowOut, ZHighOut, ZInput, clr, clk);
+    output reg [31:0] ZOut,
+    input [63:0] ZDataIn,
+    input ZLowOut, ZHighOut, ZInput, clr, clk
 
-    reg[63:0] ZTemp;
+    reg [63:0] ZTemp;
 // on each pos edge and when input ZDataIn changes
     always @(clk, ZDataIn)      
         begin
