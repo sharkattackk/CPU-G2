@@ -1,7 +1,7 @@
 `timescale 1ns / 1ns
 // OR module
 
-module OR(m, x, y);
+module My_OR(m, x, y);
     input x, y;
     output m;
 

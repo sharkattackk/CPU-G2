@@ -7,13 +7,13 @@ module FullAdder(s, cOut, a, b, cIn);
     wire w1, w2, w3;
 
     // XOR for sum calc
-    XOR xor1(w1, a, b);
-    XOR xor2(s, w1, cIn);
+    My_XOR xor1(w1, a, b);
+    My_XOR xor2(s, w1, cIn);
  
     // AND for carry out calc
-    AND and1(w2, a, b);
-    AND and2(w3, w1, cIn);
+    My_AND and1(w2, a, b);
+    My_AND and2(w3, w1, cIn);
 
     // OR for carry out
-    OR or1(cOut, w2, w3);
+    My_OR or1(cOut, w2, w3);
 endmodule
