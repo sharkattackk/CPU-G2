@@ -1,7 +1,7 @@
 module Gen_Reg(out, bus, clr, clk, wr);
     output reg [31:0] out;
     input [31:0] bus;
-    input clr, clk, wr;
+    input rd, clr, clk, wr;
     wire [31:0] in;
 
     always @(posedge clk)
