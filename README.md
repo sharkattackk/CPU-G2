@@ -11,20 +11,20 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 
 ### Arithmetic Modules
 - [x] Implement MUL module
-- [x] Add module
-- [x] Sub module
-- [x] Negate module
+- [x] Add module - Graydon
+- [x] Sub module - Graydon
+- [x] Negate module - Graydon
 - [ ] Div module
 
 ### Logic Modules
-- [x] OR module
-- [x] XOR module
-- [x] AND module
+- [x] OR module - Graydon
+- [x] XOR module - Graydon
+- [x] AND module - Graydon
 
 ### Shift Modules
-- [x] SHR module (Shift Right)
+- [x] SHR module (Shift Right) - Graydon
 - [ ] SHRA module (Shift Right Arithmetic)
-- [x] SHL module (Shift Left)
+- [x] SHL module (Shift Left) - Graydon
 
 ### Memory Access Modules
 - [x] Implement MDR (Memory Data Register)
