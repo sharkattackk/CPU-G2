@@ -48,11 +48,7 @@
 							Z_Reg Z(busInZ, ZReg, Zin, ZLowout, ZHighout, clock, clear);
 							
 
-<<<<<<< HEAD
 							RCAdder32 add(A, BusMuxOut, zregin);
-=======
-							RCAdder add(A, BusMuxOut, zregin);
->>>>>>> 3931b5da923fc0c648d09cac8f4e778f5cb871a9
 							Gen_Reg RZ(clear, clock, Rzin, zregin, BusMuxInRz);
 							
 							alu alu();

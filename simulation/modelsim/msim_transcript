@@ -1,0 +1,135 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do CPU-G2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/fourToOneMux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/fourToOneMux.v 
+# -- Compiling module fourToOneMux
+# 
+# Top level modules:
+# 	fourToOneMux
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v 
+# -- Compiling module Z_Reg
+# 
+# Top level modules:
+# 	Z_Reg
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v 
+# -- Compiling module ThirtyTwoToOneMultiplexer
+# 
+# Top level modules:
+# 	ThirtyTwoToOneMultiplexer
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/ThirtyTwoToFiveEncoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/ThirtyTwoToFiveEncoder.v 
+# -- Compiling module ThirtyTwoToFiveEncoder
+# 
+# Top level modules:
+# 	ThirtyTwoToFiveEncoder
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_right.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_right.v 
+# -- Compiling module rotate_right
+# 
+# Top level modules:
+# 	rotate_right
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_left.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_left.v 
+# -- Compiling module rotate_left
+# 
+# Top level modules:
+# 	rotate_left
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder32.v 
+# -- Compiling module RCAdder32
+# 
+# Top level modules:
+# 	RCAdder32
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/PC_Reg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:47 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/PC_Reg.v 
+# -- Compiling module PC_Reg
+# 
+# Top level modules:
+# 	PC_Reg
+# End time: 16:55:47 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:48 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v 
+# -- Compiling module Multiplicaion
+# 
+# Top level modules:
+# 	Multiplicaion
+# End time: 16:55:48 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/MDR_Reg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:48 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/MDR_Reg.v 
+# -- Compiling module MDR_reg
+# 
+# Top level modules:
+# 	MDR_reg
+# End time: 16:55:48 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:48 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/Gen_Reg.v 
+# -- Compiling module Gen_Reg
+# 
+# Top level modules:
+# 	Gen_Reg
+# End time: 16:55:48 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:48 on Feb 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374DesignProject" C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v 
+# -- Compiling module Datapath
+# ** Error: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v(60): 'bus' already declared in this scope.
+# End time: 16:55:48 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./CPU-G2_run_msim_rtl_verilog.do line 19
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374DesignProject {C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v}"
