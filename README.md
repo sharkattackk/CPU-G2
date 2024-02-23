@@ -10,10 +10,11 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 - [ ] Test bus system for stability and performance
 
 ### Arithmetic Modules
-- [x] Implement MUL module
+- [x] Implement MUL module - Tyler
 - [x] Add module - Graydon
 - [x] Sub module - Graydon
 - [x] Negate module - Graydon
+- [x] Not module - Graydon
 - [ ] Div module
 
 ### Logic Modules
