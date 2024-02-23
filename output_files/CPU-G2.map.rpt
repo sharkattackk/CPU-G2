@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU-G2
-Sat Feb 17 16:56:42 2024
+Fri Feb 23 16:39:42 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Sat Feb 17 16:56:41 2024           ;
+; Analysis & Elaboration Status ; Failed - Fri Feb 23 16:39:42 2024           ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU-G2                                      ;
 ; Top-level Entity Name         ; datapath_tb                                 ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Sat Feb 17 16:56:26 2024
+    Info: Processing started: Fri Feb 23 16:39:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -255,14 +255,224 @@ Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "HIin" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 15
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "LOin" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 15
 Info (12127): Elaborating entity "datapath_tb" for the top level hierarchy
-Error (10119): Verilog HDL Loop Statement error at datapath_tb.v(19): loop with non-constant loop condition must terminate within 250 iterations File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 19
-Error (12153): Can't elaborate top-level user hierarchy
+Info (10264): Verilog HDL Case Statement information at datapath_tb.v(23): all case item expressions in this case statement are onehot File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "PCout", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "Zlowout", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "MDRout", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "R2out", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "R3out", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "MARin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "Zin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "PCin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "MDRin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "Yin", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "IncPC", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "Read", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "AND", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "R1in", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "R2in", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "R3in", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at datapath_tb.v(39): inferring latch(es) for variable "Mdatain", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[0]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[1]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[2]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[3]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[4]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[5]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[6]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[7]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[8]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[9]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[10]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[11]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[12]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[13]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[14]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[15]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[16]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[17]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[18]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[19]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[20]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[21]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[22]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[23]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[24]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[25]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[26]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[27]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[28]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[29]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[30]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Mdatain[31]" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "R3in" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "R2in" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "R1in" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "AND" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Read" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "IncPC" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Yin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "IRin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "MDRin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "PCin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Zin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "MARin" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "R3out" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "R2out" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "MDRout" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "Zlowout" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (10041): Inferred latch for "PCout" at datapath_tb.v(39) File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 39
+Info (12128): Elaborating entity "Datapath" for hierarchy "Datapath:DUT" File: C:/intelFPGA_lite/18.1/elec374DesignProject/datapath_tb.v Line: 14
+Warning (10034): Output port "ZRegout" at Datapath.v(11) has no driver File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 11
+Info (12128): Elaborating entity "Gen_Reg" for hierarchy "Datapath:DUT|Gen_Reg:R0" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 22
+Info (12128): Elaborating entity "PC_Reg" for hierarchy "Datapath:DUT|PC_Reg:PC" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 40
+Info (12128): Elaborating entity "MDR_reg" for hierarchy "Datapath:DUT|MDR_reg:MDR" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 43
+Info (12128): Elaborating entity "Z_Reg" for hierarchy "Datapath:DUT|Z_Reg:Z" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 48
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(11): variable "clr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 11
+Warning (10230): Verilog HDL assignment warning at Z_Reg.v(12): truncated value with size 64 to match size of target (32) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(14): variable "ZInput" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 14
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(17): variable "ZLowOut" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 17
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(18): variable "ZTemp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 18
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(20): variable "ZHighOut" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 20
+Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(21): variable "ZTemp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at Z_Reg.v(9): inferring latch(es) for variable "ZOut", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at Z_Reg.v(9): inferring latch(es) for variable "ZTemp", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[0]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[1]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[2]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[3]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[4]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[5]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[6]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[7]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[8]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[9]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[10]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[11]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[12]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[13]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[14]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[15]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[16]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[17]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[18]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[19]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[20]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[21]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[22]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[23]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[24]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[25]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[26]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[27]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[28]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[29]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[30]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[31]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[32]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[33]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[34]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[35]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[36]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[37]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[38]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[39]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[40]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[41]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[42]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[43]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[44]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[45]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[46]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[47]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[48]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[49]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[50]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[51]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[52]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[53]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[54]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[55]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[56]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[57]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[58]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[59]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[60]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[61]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[62]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZTemp[63]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[0]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[1]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[2]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[3]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[4]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[5]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[6]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[7]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[8]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[9]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[10]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[11]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[12]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[13]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[14]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[15]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[16]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[17]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[18]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[19]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[20]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[21]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[22]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[23]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[24]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[25]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[26]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[27]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[28]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[29]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[30]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (10041): Inferred latch for "ZOut[31]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374DesignProject/Z_Reg.v Line: 9
+Info (12128): Elaborating entity "RCAdder32" for hierarchy "Datapath:DUT|RCAdder32:add" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 51
+Info (12128): Elaborating entity "FullAdder" for hierarchy "Datapath:DUT|RCAdder32:add|FullAdder:FA0" File: C:/intelFPGA_lite/18.1/elec374DesignProject/RCAdder32.v Line: 14
+Info (12128): Elaborating entity "My_XOR" for hierarchy "Datapath:DUT|RCAdder32:add|FullAdder:FA0|My_XOR:xor1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 10
+Info (12128): Elaborating entity "My_AND" for hierarchy "Datapath:DUT|RCAdder32:add|FullAdder:FA0|My_AND:and1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 14
+Info (12128): Elaborating entity "My_OR" for hierarchy "Datapath:DUT|RCAdder32:add|FullAdder:FA0|My_OR:or1" File: C:/intelFPGA_lite/18.1/elec374DesignProject/FullAdder.v Line: 18
+Info (12128): Elaborating entity "alu" for hierarchy "Datapath:DUT|alu:alu" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 54
+Warning (10764): Verilog HDL warning at alu.v(47): converting signed shift amount to unsigned File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 47
+Warning (10764): Verilog HDL warning at alu.v(49): converting signed shift amount to unsigned File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 49
+Warning (10034): Output port "carry" at alu.v(8) has no driver File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 8
+Info (12128): Elaborating entity "Multiplicaion" for hierarchy "Datapath:DUT|alu:alu|Multiplicaion:multi" File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 16
+Warning (10858): Verilog HDL warning at Multiplication.v(10): object i used but never assigned File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 10
+Warning (10858): Verilog HDL warning at Multiplication.v(11): object clk used but never assigned File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 11
+Warning (10030): Net "i" at Multiplication.v(10) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 10
+Warning (10030): Net "clk" at Multiplication.v(11) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.1/elec374DesignProject/Multiplication.v Line: 11
+Info (12128): Elaborating entity "rotate_right" for hierarchy "Datapath:DUT|alu:alu|rotate_right:ror" File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 17
+Warning (10230): Verilog HDL assignment warning at rotate_right.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_right.v Line: 7
+Info (12128): Elaborating entity "rotate_left" for hierarchy "Datapath:DUT|alu:alu|rotate_left:rol" File: C:/intelFPGA_lite/18.1/elec374DesignProject/alu.v Line: 18
+Warning (10230): Verilog HDL assignment warning at rotate_left.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374DesignProject/rotate_left.v Line: 7
+Info (12128): Elaborating entity "bus" for hierarchy "Datapath:DUT|bus:bus" File: C:/intelFPGA_lite/18.1/elec374DesignProject/Datapath.v Line: 60
+Warning (10230): Verilog HDL assignment warning at bus.v(9): truncated value with size 32 to match size of target (1) File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 9
+Info (12128): Elaborating entity "ThirtyTwoToFiveEncoder" for hierarchy "Datapath:DUT|bus:bus|ThirtyTwoToFiveEncoder:encoder" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 12
+Info (12128): Elaborating entity "thirtyTwoToOneMultiplexer" for hierarchy "Datapath:DUT|bus:bus|thirtyTwoToOneMultiplexer:mux" File: C:/intelFPGA_lite/18.1/elec374DesignProject/bus.v Line: 15
+Error (12006): Node instance "mux0" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 7
+Error (12006): Node instance "mux1" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 8
+Error (12006): Node instance "mux2" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 9
+Error (12006): Node instance "mux3" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 10
+Error (12006): Node instance "mux4" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 11
+Error (12006): Node instance "mux5" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 12
+Error (12006): Node instance "mux6" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 13
+Error (12006): Node instance "mux7" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 14
+Error (12006): Node instance "mux8" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 16
+Error (12006): Node instance "mux9" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 17
+Error (12006): Node instance "mux10" instantiates undefined entity "fourToOneMux". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/intelFPGA_lite/18.1/elec374DesignProject/thirtyTwoToOneMultiplexer.v Line: 19
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374DesignProject/output_files/CPU-G2.map.smsg
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 40 warnings
-    Error: Peak virtual memory: 4766 megabytes
-    Error: Processing ended: Sat Feb 17 16:56:42 2024
-    Error: Elapsed time: 00:00:16
-    Error: Total CPU time (on all processors): 00:00:13
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 11 errors, 78 warnings
+    Error: Peak virtual memory: 4773 megabytes
+    Error: Processing ended: Fri Feb 23 16:39:42 2024
+    Error: Elapsed time: 00:00:23
+    Error: Total CPU time (on all processors): 00:00:22
 
 
 +--------------------------------------------+

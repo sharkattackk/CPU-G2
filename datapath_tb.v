@@ -16,7 +16,7 @@ R2in, R3in, clock, Mdatain);
 initial
  begin
  clock = 0;
- forever #10 clock = ~ clock;
+#10 clock = ~ clock;
 end
 always @(posedge clock) // finite state machine; if clock rising-edge
  begin
