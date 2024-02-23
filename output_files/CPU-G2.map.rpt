@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU-G2
-Fri Feb 23 16:54:56 2024
+Fri Feb 23 17:02:36 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -77,7 +77,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Feb 23 16:54:56 2024       ;
+; Analysis & Elaboration Status ; Successful - Fri Feb 23 17:02:36 2024       ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU-G2                                      ;
 ; Top-level Entity Name         ; Datapath                                    ;
@@ -630,7 +630,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Fri Feb 23 16:54:34 2024
+    Info: Processing started: Fri Feb 23 17:02:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1551,9 +1551,9 @@ Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivit
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374DesignProject/output_files/CPU-G2.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 752 warnings
     Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Fri Feb 23 16:54:56 2024
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Fri Feb 23 17:02:36 2024
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +--------------------------------------------+
