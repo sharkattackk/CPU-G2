@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 // Subtract Module
-module SUBTRACT(Diff, cOut, A, B);
+module My_SUBTRACT(Diff, cOut, A, B);
     input [31:0] A, B;
     output [31:0] Diff;
     output cOut;

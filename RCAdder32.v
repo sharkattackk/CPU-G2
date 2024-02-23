@@ -47,4 +47,6 @@ module RCAdder32(Sum, cOut, A, B, cIn);
 
     // Last Full Adder bit 31
     FullAdder FA31(.a(A[31]), .b(B[31]), .cIn(carry[30]), .s(Sum[31]), .cOut(cOut));
+	 
 endmodule
+	 

@@ -1,4 +1,3 @@
-//`include "RCAdder.v"
 `timescale 1ns / 1ns
 
 module RCAdder_tb;
@@ -9,7 +8,7 @@ module RCAdder_tb;
   wire [7:0] carry_tb;
 
   // Design Under Test (DUT) instantiation
-  RCAdder DUT (
+  RCAdder32 DUT (
     .x(x_tb),
     .y(y_tb),
     .carry(carry_tb)
