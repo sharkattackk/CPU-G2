@@ -88,7 +88,7 @@ T3: begin
 R2out <= 1; Yin <= 1;
 end
 T4: begin
-R3out <= 1; AND <= 1; Zin <= 1;
+R3out <= 1; MY_AND <= 1; Zin <= 1;
 end
 T5: begin
 Zlowout <= 1; R1in <= 1;
