@@ -11,8 +11,8 @@ module My_SUBTRACT(Diff, cOut, A, B);
     wire carryIgnored;
     
     // Invert B add 1 - to make twos complement
-    RCAdder32 twosComplementAdder(~B, 32'b1, 1'b0, twosComplementB, carryIgnored);
+    RCAdder32 twosComplementAdder(twosComplementB, carryIgnored, 32'b1, ~B, 1'b0);
 
     // Add A and inverted B
-    RCAdder32 adderAB(A, twosComplementB, 1'b0, Diff, cOut);
+    RCAdder32 adderAB(Diff, cOut, A, twosComplementB, 1'b0);
 endmodule
