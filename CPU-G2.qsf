@@ -63,10 +63,9 @@ set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id data
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapath_tb -section_id datapath_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE RCAdder_tb.v -section_id RCAdder_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
-set_global_assignment -name VERILOG_FILE fourToOneMux.v
-set_global_assignment -name VERILOG_FILE RCAdder_tb.v
-set_global_assignment -name VERILOG_FILE datapath_tb.v
-set_global_assignment -name VERILOG_FILE FullAdder.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE Z_Reg.v
 set_global_assignment -name VERILOG_FILE thirtyTwoToOneMultiplexer.v
 set_global_assignment -name VERILOG_FILE ThirtyTwoToFiveEncoder.v
@@ -75,22 +74,25 @@ set_global_assignment -name VERILOG_FILE SHL.v
 set_global_assignment -name VERILOG_FILE rotate_right.v
 set_global_assignment -name VERILOG_FILE rotate_left.v
 set_global_assignment -name VERILOG_FILE RCAdder32.v
+set_global_assignment -name VERILOG_FILE RCAdder_tb.v
 set_global_assignment -name VERILOG_FILE PC_Reg.v
-set_global_assignment -name VERILOG_FILE OldRCAdder.v
 set_global_assignment -name VERILOG_FILE My_XOR.v
 set_global_assignment -name VERILOG_FILE My_SUBTRACT.v
 set_global_assignment -name VERILOG_FILE My_OR.v
-set_global_assignment -name VERILOG_FILE My_NEG.v
+set_global_assignment -name VERILOG_FILE My_NOT.v
+set_global_assignment -name VERILOG_FILE My_NEGATE.v
 set_global_assignment -name VERILOG_FILE My_MUL.v
 set_global_assignment -name VERILOG_FILE My_AND.v
 set_global_assignment -name VERILOG_FILE My_ADD.v
 set_global_assignment -name VERILOG_FILE Multiplication.v
 set_global_assignment -name VERILOG_FILE MDR_Reg.v
 set_global_assignment -name VERILOG_FILE Gen_Reg.v
+set_global_assignment -name VERILOG_FILE FullAdder.v
+set_global_assignment -name VERILOG_FILE fourToOneMux.v
+set_global_assignment -name VERILOG_FILE datapath_tb.v
 set_global_assignment -name VERILOG_FILE Datapath.v
 set_global_assignment -name VERILOG_FILE bus.v
 set_global_assignment -name VERILOG_FILE alu.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Y_Reg.v
+set_global_assignment -name VERILOG_FILE SHRA.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
