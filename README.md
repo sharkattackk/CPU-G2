@@ -10,29 +10,32 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 - [ ] Test bus system for stability and performance
 
 ### Arithmetic Modules
-- [ ] Implement MUL module
-- [x] Add module
-- [x] Sub module
-- [x] Negate module
+- [x] Implement MUL module - Tyler
+- [x] Add module - Graydon
+- [x] Sub module - Graydon
+- [x] Negate module - Graydon
+- [x] Not module - Graydon
 - [ ] Div module
 
 ### Logic Modules
-- [x] OR module
-- [x] XOR module
-- [x] AND module
+- [x] OR module - Graydon
+- [x] XOR module - Graydon
+- [x] AND module - Graydon
 
 ### Shift Modules
-- [ ] SHR module (Shift Right)
+- [x] SHR module (Shift Right) - Graydon
 - [ ] SHRA module (Shift Right Arithmetic)
-- [ ] SHL module (Shift Left)
+- [x] SHL module (Shift Left) - Graydon
 
 ### Memory Access Modules
-- [ ] Implement MDR (Memory Data Register)
-- [ ] Implement MAR (Memory Address Register)
+- [x] Implement MDR (Memory Data Register)
+- [ ] Implement MAR (Memory Address Register)  "Dont think we need this?"
+- [x] Implement General Register (Register)
 
 ### Control Units
-- [ ] IR module (Instruction Register)
-- [ ] PC Module (Program Counter)
+- [x] PC Module (Program Counter Register)
+- [x] Z Register
+- [] Y Register
 
 ## Testing and Validation
 - [ ] Set up Testbench for each module
