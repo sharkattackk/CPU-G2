@@ -35,7 +35,7 @@ This README.md serves as a checklist for the ongoing project focused on the deve
 ### Control Units
 - [x] PC Module (Program Counter Register)
 - [x] Z Register
-- [] Y Register
+- [ ] Y Register
 
 ## Testing and Validation
 - [ ] Set up Testbench for each module

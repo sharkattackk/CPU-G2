@@ -1,4 +1,4 @@
-module Y_reg (
+module Y_Reg(
     input wire clk,
     input wire reset,
     input wire load,
