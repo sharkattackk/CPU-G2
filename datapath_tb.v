@@ -20,7 +20,7 @@ module datapath_tb;
         PCin, PCout, IRin, Yin, Zin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, zlowout,
         ALUselect, MDatain, clock, clear
         );
-// add test logic here
+    // add test logic here
     initial
         begin
             clock = 0;
