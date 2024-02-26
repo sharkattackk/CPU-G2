@@ -12,279 +12,279 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:30 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v 
 # -- Compiling module Z_Reg
 # 
 # Top level modules:
 # 	Z_Reg
-# End time: 10:24:30 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/thirtyTwoToOneMultiplexer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:30 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/thirtyTwoToOneMultiplexer.v 
 # -- Compiling module ThirtyTwoToOneMultiplexer
 # 
 # Top level modules:
 # 	ThirtyTwoToOneMultiplexer
-# End time: 10:24:30 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/ThirtyTwoToFiveEncoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:30 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/ThirtyTwoToFiveEncoder.v 
 # -- Compiling module ThirtyTwoToFiveEncoder
 # 
 # Top level modules:
 # 	ThirtyTwoToFiveEncoder
-# End time: 10:24:31 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:31 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHR.v 
 # -- Compiling module SHR
 # 
 # Top level modules:
 # 	SHR
-# End time: 10:24:31 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:31 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHL.v 
 # -- Compiling module SHL
 # 
 # Top level modules:
 # 	SHL
-# End time: 10:24:31 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_right.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:31 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_right.v 
 # -- Compiling module rotate_right
 # 
 # Top level modules:
 # 	rotate_right
-# End time: 10:24:32 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_left.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:32 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_left.v 
 # -- Compiling module rotate_left
 # 
 # Top level modules:
 # 	rotate_left
-# End time: 10:24:32 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/RCAdder32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:32 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/RCAdder32.v 
 # -- Compiling module RCAdder32
 # 
 # Top level modules:
 # 	RCAdder32
-# End time: 10:24:32 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/PC_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:32 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/PC_Reg.v 
 # -- Compiling module PC_Reg
 # 
 # Top level modules:
 # 	PC_Reg
-# End time: 10:24:33 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_XOR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:33 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_XOR.v 
 # -- Compiling module My_XOR
 # 
 # Top level modules:
 # 	My_XOR
-# End time: 10:24:33 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_SUBTRACT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:33 on Feb 26,2024
+# Start time: 11:32:55 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_SUBTRACT.v 
 # -- Compiling module My_SUBTRACT
 # 
 # Top level modules:
 # 	My_SUBTRACT
-# End time: 10:24:33 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_OR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:34 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_OR.v 
 # -- Compiling module My_OR
 # 
 # Top level modules:
 # 	My_OR
-# End time: 10:24:34 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NOT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:34 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NOT.v 
 # -- Compiling module My_NOT
 # 
 # Top level modules:
 # 	My_NOT
-# End time: 10:24:34 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NEGATE.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:34 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NEGATE.v 
 # -- Compiling module My_NEGATE
 # 
 # Top level modules:
 # 	My_NEGATE
-# End time: 10:24:34 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:34 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v 
 # -- Compiling module My_AND
 # 
 # Top level modules:
 # 	My_AND
-# End time: 10:24:35 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_ADD.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:35 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_ADD.v 
 # -- Compiling module My_ADD
 # 
 # Top level modules:
 # 	My_ADD
-# End time: 10:24:35 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:35 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication.v 
 # -- Compiling module Multiplicaion
 # 
 # Top level modules:
 # 	Multiplicaion
-# End time: 10:24:35 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:35 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v 
 # -- Compiling module MDR_Reg
 # 
 # Top level modules:
 # 	MDR_Reg
-# End time: 10:24:35 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:36 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v 
 # -- Compiling module Gen_Reg
 # 
 # Top level modules:
 # 	Gen_Reg
-# End time: 10:24:36 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:36 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v 
 # -- Compiling module FullAdder
 # 
 # Top level modules:
 # 	FullAdder
-# End time: 10:24:36 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/fourToOneMux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:36 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/fourToOneMux.v 
 # -- Compiling module fourToOneMux
 # 
 # Top level modules:
 # 	fourToOneMux
-# End time: 10:24:36 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:36 on Feb 26,2024
+# Start time: 11:32:56 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v 
 # -- Compiling module Datapath
 # 
 # Top level modules:
 # 	Datapath
-# End time: 10:24:36 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:37 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v 
 # -- Compiling module bus
 # 
 # Top level modules:
 # 	bus
-# End time: 10:24:37 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:37 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 10:24:37 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:37 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v 
 # -- Compiling module Y_Reg
 # 
 # Top level modules:
 # 	Y_Reg
-# End time: 10:24:37 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/mar_reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:37 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/mar_reg.v 
 # -- Compiling module MAR_Reg
 # 
 # Top level modules:
 # 	MAR_Reg
-# End time: 10:24:37 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:24:37 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v 
 # -- Compiling module datapath_tb
 # 
 # Top level modules:
 # 	datapath_tb
-# End time: 10:24:38 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" datapath_tb 
-# Start time: 10:24:38 on Feb 26,2024
+# Start time: 11:32:57 on Feb 26,2024
 # Loading work.datapath_tb
 # Loading work.Datapath
 # Loading work.Gen_Reg
@@ -3778,5 +3778,3 @@ restart
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v(15): [PCDPC] - Port size (32) does not match connection size (1) for port 'y'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT/add/FA31/and2 File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v
 run 500ns
-# End time: 10:25:55 on Feb 26,2024, Elapsed time: 0:01:17
-# Errors: 0, Warnings: 1738
