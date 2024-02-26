@@ -3,27 +3,31 @@
 module RCAdder_tb;
 
   // Signal declarations
-  reg [7:0] x_tb;
-  reg [7:0] y_tb;
-  wire [7:0] carry_tb;
+  reg [31:0] A_tb;
+  reg [31:0] B_tb;
+  reg [31:0] Sum_tb;
+  wire [30:0] carry_tb;
+  reg cOut_tb, cIn_tb;
 
   // Design Under Test (DUT) instantiation
   RCAdder32 DUT (
-    .x(x_tb),
-    .y(y_tb),
-    .carry(carry_tb)
+    .Sum(Sum_tb),
+    .cOut(cOut_tb),
+    .A(A_tb),
+    .B(B_tb),
+    .cIn(cIn_tb)
   );
 
   // Test logic
   initial begin
-    x_tb <= 8'b00000000;
-    y_tb <= 8'b00000000;
+    A_tb <= 32'b00000000;
+    B_tb <= 32'b00000000;
     #20; // Wait for 20 time units
-    x_tb <= 8'b00101010; // decimal 42
-    y_tb <= 8'b00111010; // decimal 58
+    A_tb <= 32'b00101010; // decimal 42
+    B_tb <= 32'b00111010; // decimal 58
     #200; // Wait for 200 time units
-    x_tb <= 8'b01101001; // decimal 105
-    y_tb <= 8'b00010101; // decimal 21
+    A_tb <= 32'b01101001; // decimal 105
+    B_tb <= 32'b00010101; // decimal 21
     $finish; // End simulation
   end
 

@@ -3,8 +3,6 @@ module Datapath(	 input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9
 							 input wire PCin, PCout, IRin, Yin, Zin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, zlowout,
 							 input [3:0] ALUselect,
 							 input [31:0] MDatain,
-							 
-							 
 							 input wire clock, clear
 							
 							);
