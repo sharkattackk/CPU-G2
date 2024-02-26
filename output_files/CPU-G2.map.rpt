@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU-G2
-Sun Feb 25 00:55:04 2024
+Sun Feb 25 22:18:40 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -38,11 +38,11 @@ Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
  30. Port Connectivity Checks: "RCAdder32:add|FullAdder:FA0|My_AND:and1"
  31. Port Connectivity Checks: "RCAdder32:add"
  32. Port Connectivity Checks: "Z_Reg:Z"
- 33. Port Connectivity Checks: "Gen_Reg:Y"
+ 33. Port Connectivity Checks: "Y_Reg:Y"
  34. Port Connectivity Checks: "Gen_Reg:LO"
  35. Port Connectivity Checks: "Gen_Reg:HI"
- 36. Port Connectivity Checks: "MDR_reg:MDR"
- 37. Port Connectivity Checks: "Gen_Reg:MAR"
+ 36. Port Connectivity Checks: "MDR_Reg:MDR"
+ 37. Port Connectivity Checks: "MAR_Reg:MAR"
  38. Port Connectivity Checks: "PC_Reg:PC"
  39. Port Connectivity Checks: "Gen_Reg:IR"
  40. Port Connectivity Checks: "Gen_Reg:R15"
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Feb 25 00:55:04 2024       ;
+; Analysis & Elaboration Status ; Successful - Sun Feb 25 22:18:40 2024       ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU-G2                                      ;
 ; Top-level Entity Name         ; Datapath                                    ;
@@ -349,7 +349,6 @@ https://fpgasoftware.intel.com/eula.
 ; Port      ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Zhighin   ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; MDRin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; In_Portin ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; Cin       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; BusMuxOut ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
@@ -451,7 +450,6 @@ https://fpgasoftware.intel.com/eula.
 +----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                                                                                                               ;
 +----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Sum      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                   ;
 ; cOut     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (3 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
 ; cOut[-1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                   ;
 +----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -527,14 +525,14 @@ https://fpgasoftware.intel.com/eula.
 +---------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Gen_Reg:Y"                                                                                                                                    ;
-+------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                       ;
-+------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts                      ;
-; bus  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "bus[31..1]" will be connected to GND. ;
-+------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Y_Reg:Y"                                                                                                                                        ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                        ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; y_in  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "y_in[31..1]" will be connected to GND. ;
+; y_out ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "y_out[31..1]" have no fanouts                     ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -557,20 +555,20 @@ https://fpgasoftware.intel.com/eula.
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MDR_reg:MDR"                                                                                                                                                                       ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts                                                           ;
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; bus  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "bus[31..1]" will be connected to GND.                                      ;
-; wr   ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MDR_Reg:MDR"                                                                                                                                         ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                           ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; out     ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts                          ;
+; out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                               ;
+; MdataIn ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "MdataIn[31..1]" will be connected to GND. ;
+; bus     ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "bus[31..1]" will be connected to GND.     ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Gen_Reg:MAR"                                                                                                                                  ;
+; Port Connectivity Checks: "MAR_Reg:MAR"                                                                                                                                  ;
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                       ;
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -768,10 +766,12 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Sun Feb 25 00:54:23 2024
+    Info: Processing started: Sun Feb 25 22:17:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mar.v
+    Info (12023): Found entity 1: MAR_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MAR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file z_reg.v
     Info (12023): Found entity 1: Z_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotoonemultiplexer.v
@@ -811,7 +811,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file my_add.
 Info (12021): Found 1 design units, including 1 entities, in source file multiplication.v
     Info (12023): Found entity 1: Multiplicaion File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mdr_reg.v
-    Info (12023): Found entity 1: MDR_reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v Line: 1
+    Info (12023): Found entity 1: MDR_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gen_reg.v
     Info (12023): Found entity 1: Gen_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
@@ -827,30 +827,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file bus.v
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file y_reg.v
-    Info (12023): Found entity 1: Y_reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v Line: 1
+    Info (12023): Found entity 1: Y_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file shra.v
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(22): created implicit net for "bus" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(40): created implicit net for "busInPC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(42): created implicit net for "busInMAR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(43): created implicit net for "busInMDR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(43): created implicit net for "MDRread" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(47): created implicit net for "YData" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "busInZ" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZReg" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZLowout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(48): created implicit net for "ZHighout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "A" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "BusMuxOut" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(51): created implicit net for "zregin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(52): created implicit net for "Rzin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(52): created implicit net for "BusMuxInRz" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(55): created implicit net for "carry" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 55
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "Pout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "MDRout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "In_Portout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "Cout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(61): created implicit net for "zlowin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 61
-Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(62): created implicit net for "Pin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at datapath_tb.v(20): created implicit net for "MDatain" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(20): created implicit net for "bus" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(38): created implicit net for "busInPC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(40): created implicit net for "busInMAR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(41): created implicit net for "busInMDR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(41): created implicit net for "Mdatain" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(41): created implicit net for "MDRread" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(45): created implicit net for "YData" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(46): created implicit net for "busInZ" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(46): created implicit net for "ZReg" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(46): created implicit net for "ZLowout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(46): created implicit net for "ZHighout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(49): created implicit net for "A" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(49): created implicit net for "BusMuxOut" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(49): created implicit net for "zregin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(50): created implicit net for "Rzin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(50): created implicit net for "BusMuxInRz" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(53): created implicit net for "carry" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "Pout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "In_Portout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(57): created implicit net for "Cout" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(59): created implicit net for "zlowin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(60): created implicit net for "Pin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 60
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R0in" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R1in" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R2in" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 14
@@ -870,11 +871,12 @@ Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "HIin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 15
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "LOin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 15
 Info (12127): Elaborating entity "Datapath" for the top level hierarchy
-Warning (10034): Output port "ZRegout" at Datapath.v(11) has no driver File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 11
-Info (12128): Elaborating entity "Gen_Reg" for hierarchy "Gen_Reg:R0" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 22
-Info (12128): Elaborating entity "PC_Reg" for hierarchy "PC_Reg:PC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 40
-Info (12128): Elaborating entity "MDR_reg" for hierarchy "MDR_reg:MDR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 43
-Info (12128): Elaborating entity "Z_Reg" for hierarchy "Z_Reg:Z" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 48
+Info (12128): Elaborating entity "Gen_Reg" for hierarchy "Gen_Reg:R0" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 20
+Info (12128): Elaborating entity "PC_Reg" for hierarchy "PC_Reg:PC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 38
+Info (12128): Elaborating entity "MAR_Reg" for hierarchy "MAR_Reg:MAR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 40
+Info (12128): Elaborating entity "MDR_Reg" for hierarchy "MDR_Reg:MDR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+Info (12128): Elaborating entity "Y_Reg" for hierarchy "Y_Reg:Y" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 45
+Info (12128): Elaborating entity "Z_Reg" for hierarchy "Z_Reg:Z" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 46
 Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(11): variable "clr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 11
 Warning (10230): Verilog HDL assignment warning at Z_Reg.v(12): truncated value with size 64 to match size of target (32) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 12
 Warning (10235): Verilog HDL Always Construct warning at Z_Reg.v(14): variable "ZInput" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 14
@@ -980,12 +982,12 @@ Info (10041): Inferred latch for "ZOut[28]" at Z_Reg.v(9) File: C:/intelFPGA_lit
 Info (10041): Inferred latch for "ZOut[29]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 9
 Info (10041): Inferred latch for "ZOut[30]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 9
 Info (10041): Inferred latch for "ZOut[31]" at Z_Reg.v(9) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v Line: 9
-Info (12128): Elaborating entity "RCAdder32" for hierarchy "RCAdder32:add" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+Info (12128): Elaborating entity "RCAdder32" for hierarchy "RCAdder32:add" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Info (12128): Elaborating entity "FullAdder" for hierarchy "RCAdder32:add|FullAdder:FA0" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/RCAdder32.v Line: 14
 Info (12128): Elaborating entity "My_XOR" for hierarchy "RCAdder32:add|FullAdder:FA0|My_XOR:xor1" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v Line: 10
 Info (12128): Elaborating entity "My_AND" for hierarchy "RCAdder32:add|FullAdder:FA0|My_AND:and1" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v Line: 14
 Info (12128): Elaborating entity "My_OR" for hierarchy "RCAdder32:add|FullAdder:FA0|My_OR:or1" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v Line: 18
-Info (12128): Elaborating entity "alu" for hierarchy "alu:aluu" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 55
+Info (12128): Elaborating entity "alu" for hierarchy "alu:aluu" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 53
 Warning (10034): Output port "carry" at alu.v(7) has no driver File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v Line: 7
 Info (12128): Elaborating entity "My_ADD" for hierarchy "alu:aluu|My_ADD:addOp" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v Line: 19
 Info (12128): Elaborating entity "My_SUBTRACT" for hierarchy "alu:aluu|My_SUBTRACT:subOp" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v Line: 20
@@ -1002,7 +1004,7 @@ Info (12128): Elaborating entity "rotate_right" for hierarchy "alu:aluu|rotate_r
 Warning (10230): Verilog HDL assignment warning at rotate_right.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_right.v Line: 7
 Info (12128): Elaborating entity "rotate_left" for hierarchy "alu:aluu|rotate_left:rol" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v Line: 30
 Warning (10230): Verilog HDL assignment warning at rotate_left.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_left.v Line: 7
-Info (12128): Elaborating entity "bus" for hierarchy "bus:buss" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 62
+Info (12128): Elaborating entity "bus" for hierarchy "bus:buss" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 60
 Warning (10230): Verilog HDL assignment warning at bus.v(9): truncated value with size 32 to match size of target (1) File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 9
 Info (12128): Elaborating entity "ThirtyTwoToFiveEncoder" for hierarchy "bus:buss|ThirtyTwoToFiveEncoder:encoder" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 12
 Info (12128): Elaborating entity "ThirtyTwoToOneMultiplexer" for hierarchy "bus:buss|ThirtyTwoToOneMultiplexer:mux" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 15
@@ -1773,704 +1775,83 @@ Warning (12030): Port "ordered port 0" on the entity instantiation of "and1" is 
 Warning (12010): Port "ordered port 1" on the entity instantiation of "and1" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v Line: 14
 Warning (12010): Port "ordered port 2" on the entity instantiation of "and1" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v Line: 14
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "bus" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 22
-    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 51
-    Warning (12110): Net "clock" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 14
-    Warning (12110): Net "MDRin[31]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[30]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[29]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[28]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[27]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[26]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[25]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[24]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[23]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[22]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[21]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[20]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[19]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[18]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[17]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[16]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[15]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[14]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[13]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[12]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[11]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[10]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[9]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[8]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[7]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[6]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[3]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[2]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[1]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
-    Warning (12110): Net "MDRin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 19
+    Warning (12110): Net "bus" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 20
+    Warning (12110): Net "Mdatain" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 41
+    Warning (12110): Net "zregin" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 49
 Warning (12241): 48 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/output_files/CPU-G2.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1518 warnings
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 897 warnings
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Sun Feb 25 00:55:04 2024
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Processing ended: Sun Feb 25 22:18:40 2024
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +--------------------------------------------+

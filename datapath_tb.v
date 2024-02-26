@@ -1,22 +1,28 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
 module datapath_tb;
- reg PCout, Zlowout, MDRout, R2out, R3out; // add any other signals to see in your simulation
- reg MARin, Zin, PCin, MDRin, IRin, Yin;
- reg IncPC, Read, My_AND, R1in, R2in, R3in;
- reg clock;
- reg [31:0] Mdatain;
+
+reg R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in, 
+R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
+PCin, PCout, IRin, Yin, Zin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, zlowout;
+reg clock, Read, clear;
+reg [31:0] Mdatain;
+reg [3:0] ALUselect;
+
 parameter Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
  Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
  T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100;
  reg [3:0] Present_state = Default;
-Datapath DUT(PCout, Zlowout, MDRout, R2out, R3out, MARin, Zin, PCin, MDRin, IRin, Yin, IncPC, Read, My_AND, R1in,
-R2in, R3in, clock, Mdatain);
+
+Datapath DUT(R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in, 
+R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
+PCin, PCout, IRin, Yin, Zin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, zlowout,
+ALUselect, MDatain, clock, clear);
 // add test logic here
 initial
  begin
  clock = 0;
-#10 clock = ~ clock;
+forever #10 clock = ~ clock;
 end
 always @(posedge clock) // finite state machine; if clock rising-edge
  begin
@@ -40,11 +46,10 @@ always @(Present_state) // do the required job in each state
  begin
  case (Present_state) // assert the required signals in each clock cycle
 Default: begin
-PCout <= 0; Zlowout <= 0; MDRout <= 0; // initialize the signals
- R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
- PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
- IncPC <= 0; Read <= 0; My_AND <= 0;
- R1in <= 0; R2in <= 0; R3in <= 0; Mdatain <= 32'h00000000;
+R0in <= 0; R1in<= 0; R2in<= 0; R3in<= 0; R4in<= 0; R5in<= 0; R6in<= 0; R7in<= 0; R8in<= 0; R9in<= 0; R10in<= 0; R11in<= 0; R12in<= 0; R13in<= 0; R14in<= 0; R15in<= 0; 
+R0out<= 0; R1out<= 0; R2out<= 0; R3out<=0; R4out<= 0; R5out<= 0; R6out<= 0; R7out<= 0; R8out<= 0; R9out<= 0; R10out<= 0; R11out<= 0; R12out<= 0; R13out<= 0; R14out<= 0; R15out<= 0;
+PCin<= 0; PCout<= 0; IRin<= 0; Yin<= 0; Zin<= 0; MARin<= 0; MDRin<= 0; MDRout<= 0; HIin<= 0; HIout<= 0; LOin<= 0; LOout<= 0; IncPC<= 0; Zhighout<= 0; zlowout<= 0;
+ALUselect<= 4'b0000; Mdatain <= 32'h00000000; clock <= 0; clear <= 0; 
 end
 Reg_load1a: begin
 Mdatain <= 32'h00000012;
@@ -78,7 +83,7 @@ T0: begin // see if you need to de-assert these signals
 PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
 end
 T1: begin
-Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
+zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
 Mdatain <= 32'h28918000; // opcode for “and R1, R2, R3”
 end
 T2: begin
@@ -88,10 +93,10 @@ T3: begin
 R2out <= 1; Yin <= 1;
 end
 T4: begin
-R3out <= 1; My_AND <= 1; Zin <= 1;
+R3out <= 1; ALUselect <= 4'b0110; Zin <= 1;
 end
 T5: begin
-Zlowout <= 1; R1in <= 1;
+zlowout <= 1; R1in <= 1;
 end
  endcase
  end

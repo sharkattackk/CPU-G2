@@ -5,7 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MAR.v}
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v}
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/thirtyTwoToOneMultiplexer.v}
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/ThirtyTwoToFiveEncoder.v}
@@ -30,7 +29,6 @@ vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/C
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v}
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v}
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v}
-vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v}
 
 vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v}
 
