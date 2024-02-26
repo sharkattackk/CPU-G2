@@ -12,279 +12,279 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Z_Reg.v 
 # -- Compiling module Z_Reg
 # 
 # Top level modules:
 # 	Z_Reg
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/thirtyTwoToOneMultiplexer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/thirtyTwoToOneMultiplexer.v 
 # -- Compiling module ThirtyTwoToOneMultiplexer
 # 
 # Top level modules:
 # 	ThirtyTwoToOneMultiplexer
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/ThirtyTwoToFiveEncoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/ThirtyTwoToFiveEncoder.v 
 # -- Compiling module ThirtyTwoToFiveEncoder
 # 
 # Top level modules:
 # 	ThirtyTwoToFiveEncoder
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHR.v 
 # -- Compiling module SHR
 # 
 # Top level modules:
 # 	SHR
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/SHL.v 
 # -- Compiling module SHL
 # 
 # Top level modules:
 # 	SHL
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_right.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_right.v 
 # -- Compiling module rotate_right
 # 
 # Top level modules:
 # 	rotate_right
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:00 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_left.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:00 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/rotate_left.v 
 # -- Compiling module rotate_left
 # 
 # Top level modules:
 # 	rotate_left
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/RCAdder32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/RCAdder32.v 
 # -- Compiling module RCAdder32
 # 
 # Top level modules:
 # 	RCAdder32
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/PC_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/PC_Reg.v 
 # -- Compiling module PC_Reg
 # 
 # Top level modules:
 # 	PC_Reg
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_XOR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_XOR.v 
 # -- Compiling module My_XOR
 # 
 # Top level modules:
 # 	My_XOR
-# End time: 11:32:55 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_SUBTRACT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:55 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_SUBTRACT.v 
 # -- Compiling module My_SUBTRACT
 # 
 # Top level modules:
 # 	My_SUBTRACT
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:01
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_OR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_OR.v 
 # -- Compiling module My_OR
 # 
 # Top level modules:
 # 	My_OR
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NOT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NOT.v 
 # -- Compiling module My_NOT
 # 
 # Top level modules:
 # 	My_NOT
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NEGATE.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_NEGATE.v 
 # -- Compiling module My_NEGATE
 # 
 # Top level modules:
 # 	My_NEGATE
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v 
 # -- Compiling module My_AND
 # 
 # Top level modules:
 # 	My_AND
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_ADD.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_ADD.v 
 # -- Compiling module My_ADD
 # 
 # Top level modules:
 # 	My_ADD
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication.v 
 # -- Compiling module Multiplicaion
 # 
 # Top level modules:
 # 	Multiplicaion
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:01 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/MDR_Reg.v 
 # -- Compiling module MDR_Reg
 # 
 # Top level modules:
 # 	MDR_Reg
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:01 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v 
 # -- Compiling module Gen_Reg
 # 
 # Top level modules:
 # 	Gen_Reg
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v 
 # -- Compiling module FullAdder
 # 
 # Top level modules:
 # 	FullAdder
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/fourToOneMux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/fourToOneMux.v 
 # -- Compiling module fourToOneMux
 # 
 # Top level modules:
 # 	fourToOneMux
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:56 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v 
 # -- Compiling module Datapath
 # 
 # Top level modules:
 # 	Datapath
-# End time: 11:32:56 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v 
 # -- Compiling module bus
 # 
 # Top level modules:
 # 	bus
-# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v 
 # -- Compiling module Y_Reg
 # 
 # Top level modules:
 # 	Y_Reg
-# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/mar_reg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/mar_reg.v 
 # -- Compiling module MAR_Reg
 # 
 # Top level modules:
 # 	MAR_Reg
-# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2 {C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2" C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v 
 # -- Compiling module datapath_tb
 # 
 # Top level modules:
 # 	datapath_tb
-# End time: 11:32:57 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:37:02 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" datapath_tb 
-# Start time: 11:32:57 on Feb 26,2024
+# Start time: 13:37:02 on Feb 26,2024
 # Loading work.datapath_tb
 # Loading work.Datapath
 # Loading work.Gen_Reg
@@ -312,8 +312,55 @@
 # Loading work.Multiplicaion
 # Loading work.rotate_right
 # Loading work.rotate_left
-# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(17): [PCDPC] - Port size (32) does not match connection size (1) for port 'MDatain'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(5).
+# ** Warning: (vsim-3017) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Too few port connections. Expected 64, found 19.
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [PCDPC] - Port size (2) does not match connection size (1) for port 'AND'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R0in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R4in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R5in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R6in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R7in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R8in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R9in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R10in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R11in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R12in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R13in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R14in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R15in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R0out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R1out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R4out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R5out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R6out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R7out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R8out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R9out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R10out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R11out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R12out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R13out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R14out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R15out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'Zhighout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'DIV'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'MUL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ADD'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SUB'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'OR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'NEG'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'NOT'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHRA'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ROR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ROL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'clear'.
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(18): [PCDPC] - Port size (32) does not match connection size (1) for port 'bus'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT/R0 File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(19): [PCDPC] - Port size (32) does not match connection size (1) for port 'bus'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v(1).
@@ -2049,8 +2096,55 @@
 # run 500 ns
 add wave -position insertpoint sim:/datapath_tb/DUT/aluu/andOp/*
 restart
-# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(17): [PCDPC] - Port size (32) does not match connection size (1) for port 'MDatain'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(5).
+# ** Warning: (vsim-3017) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Too few port connections. Expected 64, found 19.
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [PCDPC] - Port size (2) does not match connection size (1) for port 'AND'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R0in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R4in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R5in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R6in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R7in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R8in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R9in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R10in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R11in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R12in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R13in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R14in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R15in'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R0out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R1out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R4out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R5out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R6out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R7out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R8out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R9out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R10out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R11out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R12out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R13out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R14out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'R15out'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'Zhighout'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'DIV'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'MUL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ADD'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SUB'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'OR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'NEG'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'NOT'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHRA'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'SHL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ROR'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'ROL'.
+# ** Warning: (vsim-3722) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v(16): [TFMPC] - Missing connection for port 'clear'.
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(18): [PCDPC] - Port size (32) does not match connection size (1) for port 'bus'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT/R0 File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v(19): [PCDPC] - Port size (32) does not match connection size (1) for port 'bus'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Gen_Reg.v(1).

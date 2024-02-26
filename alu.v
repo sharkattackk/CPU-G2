@@ -31,39 +31,37 @@ rotate_left rol(rol_res,A,B);
 
 always @ (posedge clk)
 begin
-		case(select)
-				4'b0001:
+		if (ADD)
                   RLo <= sum_out;    //Addition
-				4'b0010:
-						RLo <= sub_out;    //Subtraction
-				4'b0011:
+		else if (SUB)
+					RLo <= sub_out;    //Subtraction
+		else if (MUL)
 						begin
 							RLo <= multi_res[31:0];     //Multiplicaion
 							RHi <= multi_res[63:32];
 						end
-				4'b0101:
+		else if (DIV)
 						begin
 					      RHi <= A % B;            //Mod
 							RLo <= (A-RHi) / B;        //Division
 						end
-				4'b0110:
+		else if (AND)
 						RLo <= and_out;    //And
-				4'b0111:
+		else if (OR)
                   RLo <=  or_out;   //Or
-				4'b1000:
+		else if (NEG)
                   RLo <= neg_out;    //Negate
-				4'b1010:
+		else if (NOT)
                   RLo <= not_out;    //Not
-				4'b1100:
+		else if (SHL)
                   RLo <= shl_out;    //Shift Left
-				4'b1101:
+		else if (SHR)
                   RLo <= shr_out;    //Shift Right
-				4'b1110:
+		else if (ROR)
 						RLo <= rol_res;         //Rotate left
-				4'b1111:
+		else if (ROL)
 						RLo <= ror_res;         //Rotate right
-				default:
+		else
 						RLo <= RLo;             //Default RLo remains unchanged
-			endcase
 		end
 endmodule

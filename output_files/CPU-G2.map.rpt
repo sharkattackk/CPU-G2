@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU-G2
-Mon Feb 26 11:32:13 2024
+Mon Feb 26 13:36:45 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -88,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Feb 26 11:32:13 2024       ;
+; Analysis & Elaboration Status ; Successful - Mon Feb 26 13:36:45 2024       ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU-G2                                      ;
 ; Top-level Entity Name         ; Datapath                                    ;
@@ -753,7 +753,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Mon Feb 26 11:31:59 2024
+    Info: Processing started: Mon Feb 26 13:36:30 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-G2 -c CPU-G2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -813,7 +813,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.v
 Info (12021): Found 1 design units, including 1 entities, in source file y_reg.v
     Info (12023): Found entity 1: Y_Reg File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Y_Reg.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file shra.v
-Warning (10236): Verilog HDL Implicit Net warning at datapath_tb.v(21): created implicit net for "MDatain" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file multiplication_tb.v
+    Info (12023): Found entity 1: Multiplication_tb File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication_tb.v Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at datapath_tb.v(17): created implicit net for "Clock" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/datapath_tb.v Line: 17
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(18): created implicit net for "bus" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 18
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(36): created implicit net for "busInPC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 36
 Warning (10236): Verilog HDL Implicit Net warning at Datapath.v(38): created implicit net for "busInMAR" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 38
@@ -851,6 +853,7 @@ Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(14): created implicit net for "R15in" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "HIin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 15
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(15): created implicit net for "LOin" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/bus.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Multiplication_tb.v(17): created implicit net for "Clock" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Multiplication_tb.v Line: 17
 Info (12127): Elaborating entity "Datapath" for the top level hierarchy
 Info (12128): Elaborating entity "Gen_Reg" for hierarchy "Gen_Reg:R0" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 18
 Info (12128): Elaborating entity "PC_Reg" for hierarchy "PC_Reg:PC" File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 36
@@ -2605,10 +2608,10 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "Cin[0]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/Datapath.v Line: 15
 Warning (12241): 47 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/output_files/CPU-G2.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1670 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Mon Feb 26 11:32:13 2024
-    Info: Elapsed time: 00:00:14
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1671 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Mon Feb 26 13:36:45 2024
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:13
 
 
