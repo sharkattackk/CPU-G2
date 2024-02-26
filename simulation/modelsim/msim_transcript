@@ -5529,3 +5529,5 @@ restart
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT/buss/mux/mux10 File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/fourToOneMux.v
 run 500ns
 # WARNING: No extended dataflow license exists
+# End time: 23:20:42 on Feb 25,2024, Elapsed time: 1:01:23
+# Errors: 0, Warnings: 2620

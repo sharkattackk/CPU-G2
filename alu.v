@@ -14,7 +14,7 @@ reg [31:0] RLo, RHi;
 assign C = {RHi, RLo};
 initial RHi = 0;
 
-//Make an instance of each operation
+
 My_AND andOp(and_out,Y,B);
 My_ADD addOp(sum_out,carry_out,A,B);
 My_SUBTRACT subOp(sub_out,carry_out,Y,B);
@@ -33,12 +33,12 @@ always @ (posedge clk)
 begin
 		case(select)
 				4'b0001:
-                  RLo <= sum_out;    //Addition
+                  RLo <= and_out;    //Addition
 				4'b0010:
 						RLo <= sub_out;    //Subtraction
 				4'b0011:
 						begin
-							RLo <= multi_res[31:0];     //Multiplicaion
+							RLo <= multi_res[31:0];                 //Multiplicaion
 							RHi <= multi_res[63:32];
 						end
 				4'b0101:

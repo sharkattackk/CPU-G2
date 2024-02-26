@@ -1,4 +1,4 @@
-module MDR_Reg(out, MdataIn, bus, wr, rd, clr, clk);
+module MDR_reg(out, MdataIn, bus, wr, rd, clr, clk);
     output reg [31:0] out;
     input [31:0] MdataIn, bus;
     input rd, clr, clk, wr;
