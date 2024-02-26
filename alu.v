@@ -1,5 +1,5 @@
 module alu(
-			input [3:0] select,
+			input [1:0] AND, DIV, MUL, ADD, SUB, OR, NEG, NOT, SHR, SHRA, SHL, ROR, ROL,
 			input clk,
 			input wire [31:0] A,B,Y,
 			output [63:0] C,
