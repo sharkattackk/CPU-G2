@@ -3872,3 +3872,5 @@ restart
 # ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/FullAdder.v(15): [PCDPC] - Port size (32) does not match connection size (1) for port 'y'. The port definition is at: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /datapath_tb/DUT/add/FA31/and2 File: C:/intelFPGA_lite/18.1/elec374CPUProject/CPU-G2/My_AND.v
 run 500ns
+# End time: 13:46:54 on Feb 26,2024, Elapsed time: 0:09:52
+# Errors: 0, Warnings: 1830
